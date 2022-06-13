@@ -301,17 +301,40 @@ header{
 .smartacademy {
     font-family: var(--avenir-black);
 }
-/* ტაბლეტის რეზოლუცია */
-@media (max-width:1024px) {
-   body{
-    max-width: 1024px;
-    width: 100%;
-    grid-template-columns: 1fr 4fr;
+/* ლეპტოპის რეზოლუცია */
+@media (max-width:1279px) {
+    body {
+        max-width: 1279px;
+        width: 100%;
     }
+    .main-container {
+        margin: 0 ;
+    }
+    .section-center, .top-designers {
+       max-width: 1000px;
+       grid-template-columns: 1fr 1fr 1fr;
+   }
+    .filter-btn {
+       margin-right: 2rem;
+   }
     .sidebar-container {
         width: 100%;
-        padding: 1.6rem 0.0rem;
+        padding: 1.6rem 0.5rem;
     }
+    .logo {
+        padding-left: 2.5rem;
+    }
+    footer{
+        margin-left: 2rem;
+    }
+}
+/* ტაბლეტის რეზოლუცია */
+@media (max-width:1024px) {
+    body{
+        max-width: 1024px;
+        width: 100%;
+        grid-template-columns: 1fr 4fr;
+        }
     .container {
         max-width: 730px;
     }
@@ -361,47 +384,47 @@ header{
         width: 100%;
         grid-template-columns: auto;
         }
-        .sidebar-container {
-            width: 100%;
-            margin: 0 auto;
-            padding: 1.6rem 1rem;
-        }
-        .sidebar-followings {
-            display: none;
-        }
-        .logo {
-            margin-bottom: 2rem;
-            padding: 0.5rem 1rem;
-        }
-        .nav-toggle {
-            display: inline-block;
-        }
-        .sidebar li {
-            width: 95%;
-            padding-left: 1rem;
-        }
-        .links {
-            height: 0;
-            overflow: hidden;
-            transition: var(--transition);
-          }
-          .show-links {
-            height: auto;
-            display: flex;
-          }
-          .search-bar {
-            width: 13rem;
-            padding: 0.8rem 1rem ;
-        }
-        .search-bar input {
-            width: 90%;
-        }
-        .prof-shorts span,
-        .prof-shorts img,
-        .prof-shorts button {
-            margin-left: 1.3rem;
-            cursor: pointer;
-        }
+    .sidebar-container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 1.6rem 1rem;
+    }
+    .sidebar-followings {
+        display: none;
+    }
+    .logo {
+        margin-bottom: 2rem;
+        padding: 0.5rem 1rem;
+    }
+    .nav-toggle {
+        display: inline-block;
+    }
+    .sidebar li {
+        width: 95%;
+        padding-left: 1rem;
+    }
+    .links {
+        height: 0;
+        overflow: hidden;
+        transition: var(--transition);
+    }
+    .show-links {
+        height: auto;
+        display: flex;
+    }
+    .search-bar {
+        width: 13rem;
+        padding: 0.8rem 1rem ;
+    }
+    .search-bar input {
+        width: 90%;
+    }
+    .prof-shorts span,
+    .prof-shorts img,
+    .prof-shorts button {
+        margin-left: 1.3rem;
+        cursor: pointer;
+    }
 }
 /* მობილურის რეზოლუცია */
 @media (max-width: 480px) {
